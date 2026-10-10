@@ -1,0 +1,17 @@
+CONVITE — CAFÉ ENTRE AMIGOS (23/10, 19h)
+
+  index.html   o convite inteiro (fontes, desenhos e animações já embutidos)
+  capa.jpg     miniatura que aparece quando o link é compartilhado no WhatsApp
+
+Confirmações vão para o WhatsApp +55 77 99997-6930.
+
+PUBLICAR NO NETLIFY
+  1. app.netlify.com > Add new site > Deploy manually.
+  2. Arraste esta pasta (com os dois arquivos).
+  3. Site configuration > Change site name: cafe-ailton-selma
+     (Se escolher outro nome, troque "cafe-ailton-selma" nas linhas og:url
+      e og:image do index.html e publique de novo.)
+
+TESTAR
+  Abra o link no celular, confirme e veja se a mensagem chega no número.
+  Confira a miniatura colando o link em https://www.opengraph.xyz
