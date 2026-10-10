@@ -660,13 +660,13 @@ input::placeholder{color:#B3A08E}
   // ---------- mensagem ----------
   function montar(n, vai){
     if (vai){
-      return "Olá! Aqui é " + n + ". ☕\n\n" +
-             "Confirmo presença no café de sexta, 23/10, às 19h." +
+      return "Ol\u00e1! Aqui \u00e9 " + n + ". \u2615\uFE0F\n\n" +
+             "Confirmo presen\u00e7a no caf\u00e9 de sexta, 23/10, \u00e0s 19h." +
              (ac2 > 0 ? "\nVou com mais " + ac2 + (ac2 === 1 ? " pessoa" : " pessoas") + " (" + (ac2 + 1) + " no total)." : "") +
-             "\n\nAté lá!";
+             "\n\nAt\u00e9 l\u00e1!";
     }
-    return "Olá! Aqui é " + n + ".\n\n" +
-           "Obrigado pelo convite para o café do dia 23/10. Infelizmente não poderei ir desta vez. Fica para a próxima!";
+    return "Ol\u00e1! Aqui \u00e9 " + n + ".\n\n" +
+           "Obrigado pelo convite para o caf\u00e9 do dia 23/10. Infelizmente n\u00e3o poderei ir desta vez. Fica para a pr\u00f3xima!";
   }
 
   // ---------- envio: a folha se estica, a moeda gira e segue para o WhatsApp ----------
@@ -684,7 +684,7 @@ input::placeholder{color:#B3A08E}
     document.getElementById("okEb").textContent = vai ? "Presença confirmada" : "Resposta registrada";
     document.getElementById("okT").textContent = vai ? "Até o dia 23, " + primeiro + "!" : "Obrigado, " + primeiro;
     document.getElementById("okP").textContent = vai ? "O café estará quentinho te esperando." : "Vamos sentir sua falta. Fica para a próxima!";
-    var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(montar(n, vai));
+    var url = "https://api.whatsapp.com/send?phone=" + WHATSAPP + "&text=" + encodeURIComponent(montar(n, vai));
 
     // a folha cresce a partir da própria altura até ocupar a tela
     sheet.style.height = sheet.offsetHeight + "px";
