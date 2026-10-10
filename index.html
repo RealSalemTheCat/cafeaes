@@ -138,6 +138,7 @@ h1{
   margin:clamp(10px,calc(var(--vh,1svh)*3.2),40px) 0 clamp(8px,calc(var(--vh,1svh)*2.6),34px);padding:clamp(8px,calc(var(--vh,1svh)*2.2),26px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
 .when .side{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--coffee)}
+.when .hora{font-family:var(--serif);font-weight:400;font-size:clamp(22px,min(7.2vw,calc(var(--vh,1svh)*4)),32px);letter-spacing:0;text-transform:none;color:var(--ink);line-height:1}
 .when .side small{display:block;font-size:11px;font-weight:500;letter-spacing:.12em;color:var(--muted);margin-top:3px}
 .when .day{
   font-family:var(--serif);font-weight:400;font-size:clamp(44px,calc(var(--vh,1svh)*9),68px);line-height:.9;color:var(--ink);
@@ -381,9 +382,9 @@ input::placeholder{color:#B3A08E}
     <p class="phrase">Cheiro de café, cheiro de amizade.</p>
 
     <div class="when" aria-label="Sexta-feira, 23 de outubro, às 19 horas">
-      <div class="side">Sexta<small>feira</small></div>
+      <div class="side hora">Sexta</div>
       <div class="day">23<small>Outubro</small></div>
-      <div class="side">19h<small>da noite</small></div>
+      <div class="side hora">19h</div>
     </div>
 
     <div class="where">
